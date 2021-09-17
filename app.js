@@ -6,6 +6,7 @@ function reverseStr(string) {
 }
 
 function isPalindrome(string) {
+
   var reversedString = reverseStr(string);
   if (string === reversedString) {
     return true;
@@ -34,7 +35,7 @@ function numberToString(date) {
   }
 
   dateStr.year = date.year.toString();
-
+console.log('hi:',dateStr)
   return dateStr;
 }
 
@@ -52,15 +53,20 @@ function convertDateInAllFormats(date) {
   return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd];
 }
 
+
 function palindromeInAllDateFormats(date) {
   var listOfDateFormats = convertDateInAllFormats(date);
-  for (i = 0; i < listOfDateFormats.length; i++) {
-    if (isPalindrome(listOfDateFormats[i])) {
-      return true;
-    } else return false;
+   var resultArr= listOfDateFormats.map(function(date){
+      return isPalindrome(date) 
+    })
+  return resultArr.includes(true)
   }
-}
-
+var date = {
+  day: 11,
+  month: 11,
+  year: 2021,
+};
+console.log(palindromeInAllDateFormats(date))
 function isLeapYear(year) {
   if (year % 400 === 0) {
     return true;
@@ -158,11 +164,7 @@ function getPreviousDate(date) {
   return prevDate;
 }
 
-var date = {
-  day: 11,
-  month: 9,
-  year: 2021,
-};
+
 console.log(getPreviousDate(date));
 
 function getPreviousPalindromeDate(date) {
