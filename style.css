@@ -89,3 +89,55 @@ button{
     
 
 }
+
+.containerTwo{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:#5265E4;
+    font-size: 1.2rem;
+
+    
+    
+}
+
+.centered{
+    width:600px;
+    margin:auto;
+    margin-bottom: 3rem;
+}
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-inline{
+    display:inline;
+    padding:0rem 0.5rem;
+}
+
+.footer{
+    background-color:#345B63;
+    border-top-right-radius: 1rem;
+    color:white;
+    padding:2rem;
+    text-align:center;
+    position:absolute;
+    left:0;right:0;
+    bottom:0
+    
+    
+}
+
+.footer .links{
+    color:white;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+    color:white;
+}
