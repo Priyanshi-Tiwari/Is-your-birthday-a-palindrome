@@ -130,6 +130,7 @@ button{
 
 .footer .links{
     color:white;
+    text-decoration: none;
 }
 
 .footer ul{
@@ -140,4 +141,5 @@ button{
     font-weight: bold;
     font-size: large;
     color:white;
+    margin-bottom: 0.5rem;
 }
